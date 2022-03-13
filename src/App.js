@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 import CourseGoalList from './components/CourseGoals/CourseGoalList/CourseGoalList';
 import CourseInput from './components/CourseGoals/CourseInput/CourseInput';
@@ -36,14 +36,14 @@ const App = () => {
   }
 
   return (
-
-      <section id="goal-form">
+    <div>
+      <section id='goal-form'>
         <CourseInput onAddGoal={addGoalHandler} />
       </section>
-      <section id="goals">
+      <section id='goals'>
         {content}
       </section>
-
+    </div>
   );
 };
 
